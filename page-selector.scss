@@ -1,0 +1,62 @@
+$medium-light-grey:     #d5d5d5;
+$highlight-blue:        #00b6d6;
+$very-light-grey:       #f4f4f4;
+
+.page-selector {
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  border-left: 1px solid $medium-light-grey; 
+
+  .page-block, 
+  .on-page-block,
+  .no-action-block {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border: 1px solid $medium-light-grey;
+    border-left: 0;
+  }
+
+  .page-block {
+    cursor: pointer;
+  }
+
+  .on-page-block {
+    color: $white;
+    background-color: $highlight-blue;
+  }
+
+  .no-action-block {
+    color: $medium-grey;
+    background-color: $very-light-grey;
+  }
+
+  .right-arrow, .left-arrow {
+    display: inline-block;
+    position: relative;
+    width: 11px;
+    height: 17.5px;
+    background-size: 11px 17.5px;
+    background-repeat: no-repeat;
+    background-image: url('/images/arrow.png');
+  }
+
+  .right-arrow {
+    right: -1px;
+    top: 3px;
+    transform: scaleX(-1);
+  }
+
+  .left-arrow {
+    right: 1px;
+    top: 3.5px;
+  }
+
+  .active-arrow {
+    filter: brightness(0.1);
+  }
+}
